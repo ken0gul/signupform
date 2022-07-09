@@ -42,6 +42,7 @@ inputs.forEach(input => {
             if(password.value === rePassword.value) {
                 submit.disabled = false;
                 input.style.border = '1px solid green !important';
+                inputPassword.forEach(i => i.style.border = '1px solid green')
             }
         })
     })
