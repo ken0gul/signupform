@@ -34,18 +34,27 @@ inputs.forEach(input => {
         input.addEventListener('input', (e) => {
             if(e.target) passText.innerText = "";
             if(password.value !== rePassword.value) {
-                submit.disabled = true;
                 passText.textContent = "*Passwords do not match";
                 e.target.style.border = '1px solid red';
             }
 
             if(password.value === rePassword.value) {
-                submit.disabled = false;
                 input.style.border = '1px solid green !important';
                 inputPassword.forEach(i => i.style.border = '1px solid green')
             }
         })
+ 
+
     })
 
 
 
+       // Check password Validity
+       password.addEventListener('input', () => {
+        if(password.validity.patternMismatch) {
+            password.setCustomValidity('Please enter minimum 8 characters');
+            password.reportValidity();
+        } else {
+            password.setCustomValidity("");
+        }
+    })
