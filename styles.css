@@ -150,19 +150,26 @@ form {
 
 
 /* Required fields labels */
-.required{position: relative;}
+.required {
+    position: relative;
+}
+
+
 .required:after  {
     content: "Required";
     position: absolute;
+
+    
 
     padding: 0.2rem 0.8rem;
     font-size: 1.6rem;
     border-radius: 5px;
     background-color: black;
     color: white;
-    top: 0;
-    right: 0;
-    transform: translate(-220%, -10%);
+    right: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    /* transform: translate(-15rem, -10%); */
 }
 
 
@@ -185,6 +192,9 @@ button:hover {
     background-color: #59ccfaa4;
 }
 
+button:active {
+    border: 1px solid white;
+}
 
 .cta-btn p {
     font-size: 1.6rem;
