@@ -51,8 +51,8 @@
         
         <div class="password">
             <label for="pass">Password</label>
-            <input type="password" id="pass" name="user_password">
-            <span class="pass-text">*Password do not match</span>
+            <input type="password" id="pass" name="user_password" pattern="[0-9A-Za-z]{8,}">
+            <span class="pass-text">*Password do not match(8 character min.)</span>
         </div>
         <div class="re-password">
             <label for="repass">Re-password</label>
@@ -66,6 +66,6 @@
 
         </div>
     </form>
-</div>
+
 </body>
 </html>
