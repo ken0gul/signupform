@@ -12,6 +12,8 @@
 
 body {
     display: flex;
+    overflow: hidden;
+
 }
 
 
@@ -20,8 +22,8 @@ body {
     align-items: flex-end;
     position: relative;
     height: 100vh;
-    width: 650px;
-
+    width: 30%;    
+  
 
     background-image: url("./anne-nygard-8uKeuw_6Lew-unsplash.jpg");
     background-position: center;
@@ -88,7 +90,6 @@ form > p {
 
 form {
     padding: 75px;
-    flex: 0 0;
     height: 100vh;
     
 
@@ -157,7 +158,7 @@ form {
     background-color: black;
     color: white;
     top: -5px;
-    right: 95px;
+    right: 140px;
 }
 
 
@@ -168,6 +169,7 @@ button {
     border-radius: 11px;
     padding: 10px 20px;
     width: 50%;
+    height: auto;
 
     cursor: pointer;
     font-size: 32px;
@@ -179,8 +181,22 @@ button:hover {
     background-color: #59ccfaa4;
 }
 
+
+.cta-btn p {
+    font-size: 16px;
+}
+
 /* Passwords */
 .pass-text {
     font-size: 16px;
     height: 2em;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+  form {
+    flex: 0 0;
+  }
 }
