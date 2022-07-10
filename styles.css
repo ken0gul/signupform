@@ -9,10 +9,13 @@
     outline: none;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 
 body {
     display: flex;
-    overflow: hidden;
 
 }
 
@@ -34,7 +37,7 @@ body {
 
 /* Copyright */
 .copyright {
-    margin-left: 20px;
+    margin-left: 2rem;
 
 }
 .copyright u {
@@ -46,20 +49,20 @@ body {
 }
 
 h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
-    margin-top: 100px;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 form > h2 + span {
     display: inline-block;
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
 }
 
 form > p {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 
 .logo {
@@ -68,12 +71,12 @@ form > p {
     align-items: center;
     justify-content: center;
     top: 20%;
-    left: 20px;
+    left: 2rem;
     width: 80%;
 }
 
 .logo span {
-    font-size: 66px;
+    font-size: 6.6rem;
     color: #fff;
     
 }
@@ -81,15 +84,15 @@ form > p {
 /* FORM */
 
 .cta-text {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: bold;
 
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 4rem;
+    margin-left: 2rem;
 }
 
 form {
-    padding: 75px;
+    padding: 7.5rem;
     height: 100vh;
     
 
@@ -100,34 +103,34 @@ form {
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 1.5rem;
 
-    font-size: 28px;
-    padding: 24px;
+    font-size: 2.8rem;
+    padding: 2.4rem;
 
 }
 
 .form > div {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.5rem;
 
 }
 
 .form > div > label {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 .form > div > input {
-    width: 400px;
+    width:40rem;
     height: auto;
 
-    font-size: 22px;
-    padding: 5px 10px;
+    font-size: 2.2rem;
+    padding: 0.5rem 1rem;
     outline: none;
-    border-radius: 9px;
+    border-radius: 0.9rem;
     border: 1px solid #999;
 }
 
@@ -152,13 +155,14 @@ form {
     content: "Required";
     position: absolute;
 
-    padding: 2px 8px;
-    font-size: 16px;
+    padding: 0.2rem 0.8rem;
+    font-size: 1.6rem;
     border-radius: 5px;
     background-color: black;
     color: white;
-    top: -5px;
-    right: 140px;
+    top: 0;
+    right: 0;
+    transform: translate(-220%, -10%);
 }
 
 
@@ -167,12 +171,12 @@ form {
 button {
     border: none;
     border-radius: 11px;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     width: 50%;
     height: auto;
 
     cursor: pointer;
-    font-size: 32px;
+    font-size: 3.2rem;
     background-color: #59CCFA;
     color: #112A46;
 }
@@ -183,20 +187,76 @@ button:hover {
 
 
 .cta-btn p {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 /* Passwords */
 .pass-text {
-    font-size: 16px;
+    font-size: 1.6rem;
     height: 2em;
 }
 
 
 /* Media Queries */
 
-@media screen and (max-width: 767px) {
-  form {
-    flex: 0 0;
+@media screen and (max-width: 76rem) {
+    html {
+        font-size: 55%;
+    }
+  body {
+    flex-direction: column;
   }
+
+  .intro {
+    height: 150px;
+    width: 100%;
+    background-image: none;
+    background-color: black;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  form {
+    background-color: white;
+    
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    justify-items:center;
+    
+  }
+
+  .form > div > input {
+    width: 75rem;
+  }
+  .required::after {
+    display: none;
+  }
+
+  button {
+    width: 25rem;
+    margin-top: 2rem;    
+  }
+  
+}
+
+
+@media screen and (max-width: 100rem) {
+    button {
+        width: 25rem;
+    }    
+}
+
+
+@media screen and (max-width: 60rem) {
+    html {
+        font-size: 52%;
+    }    
+
+    .form > div > input {
+        width: 50rem;
+    }
 }
