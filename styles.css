@@ -144,8 +144,7 @@ form {
     box-shadow: inset 0 0 5px #888;
     -webkit-appearance: none;
     appearance: none;
-
-    
+    width: 100%;
 }
 
 
@@ -166,7 +165,7 @@ form {
     border-radius: 5px;
     background-color: black;
     color: white;
-    right: 26%;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
     /* transform: translate(-15rem, -10%); */
