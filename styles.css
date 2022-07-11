@@ -45,7 +45,8 @@ body {
 }
 
 .copyright p {
-    color: inherit;
+    color: #fff;
+    font-size: 2rem;
 }
 
 h2 {
@@ -234,9 +235,7 @@ button:active {
     background-color: black;
   }
 
-  .copyright {
-    display: none;
-  }
+
 
   form {
     background-color: white;
