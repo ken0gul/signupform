@@ -36,11 +36,13 @@ inputs.forEach(input => {
             if(password.value !== rePassword.value) {
                 passText.textContent = "*Passwords do not match";
                 e.target.style.border = '1px solid red';
+                submit.disabled = true;
             }
 
             if(password.value === rePassword.value) {
                 input.style.border = '1px solid green !important';
-                inputPassword.forEach(i => i.style.border = '1px solid green')
+                inputPassword.forEach(i => i.style.border = '1px solid green');
+                submit.disabled = false;
             }
         })
  
