@@ -241,9 +241,7 @@ button:active {
   .form > div > input {
     width: 75rem;
   }
-  .required::after {
-    display: none;
-  }
+
 
   button {
     width: 25rem;
