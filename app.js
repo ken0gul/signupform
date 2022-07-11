@@ -6,10 +6,9 @@ const password = document.querySelector('input#pass');
 const submit = document.querySelector('button');
 const form = document.querySelector('form');
 let passText = document.querySelector(".pass-text");
-let required = document.querySelectorAll(".required");
 
 
-console.log(password.value, rePassword.value)
+
 inputs.forEach(input => {
 
     input.addEventListener('input', () => {
@@ -60,3 +59,6 @@ inputs.forEach(input => {
         }
     })
 
+
+
+ 
