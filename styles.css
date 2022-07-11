@@ -139,6 +139,11 @@ form {
     border: 1px solid black;
 }
 
+
+.form > div > input:focus {
+    border: 1px solid rgb(10, 10, 97);
+}
+
 /* Input Shadow */
 .form > div > input {
     box-shadow: inset 0 0 5px #888;
